@@ -15,7 +15,7 @@ div {
   max-width: 100%;
   width: 960px;
   margin: 0 auto;
-  align-items: center;
+
 }
 
 /* main-banner */
@@ -36,6 +36,8 @@ header .container {
   padding: 1rem 0;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  top: 1rem;
 
 }
 
@@ -58,13 +60,94 @@ nav li {
 
 /* slogan */
 .slogan {
-  width: 50%;
+  width: 45%;
   background-color: white;
   color: black;
   position: relative;
   top: 10rem;
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
   font-weight: bold;
   font-size: 2rem;
-  
+  line-height: 1.2;
+  float: right;
+}
+
+/* icons section */
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 8rem;
+}
+ .icons {
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+
+ }
+
+.icon.exams img {
+  width: 3.5rem;
+
+}
+
+.icon.fittings img {
+  width: 5rem;
+}
+
+.icon.delivery img {
+  width: 5rem;
+}
+
+
+.icon span {
+  width: 5rem;
+  margin: 0 auto;
+}
+
+/* business info section */
+.business-info {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 3rem 3rem 5rem 2rem;
+
+}
+
+.info {
+  width 35%;
+  margin-right: 5%;
+}
+
+.info h1 {
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 3rem 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  width: 100%;
+
+
+  justify-content: space-between;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
 }
