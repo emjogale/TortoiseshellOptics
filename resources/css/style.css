@@ -2,15 +2,20 @@
 html {
   font-size: 18px;
   line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *:before, *after {
+  box-sizing: inherit;
 }
 
 body {
   font-family: "Helvetica", sans-serif;
 }
 
-div {
+/*div {
   border: 1px solid black;
-}
+} */
 .container {
   max-width: 100%;
   width: 960px;
@@ -58,6 +63,10 @@ nav li {
   padding-right: 2rem;
 }
 
+.mobile-nav  {
+  display: none;
+}
+
 /* slogan */
 .slogan {
   width: 45%;
@@ -78,7 +87,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
 }
 
 .icon {
@@ -88,19 +97,11 @@ nav li {
   justify-content: space-between;
   width: 30%;
   height: 8rem;
-
-
-
-    margin: 3rem;
-   width: 5rem;
-
+  margin: 3rem 3rem 0 3rem;
+  width: 5rem;
+  text-align: center;
 }
-}
- .icons {
-   padding-top: 3rem;
-   padding-bottom: 3rem;
 
- }
 
 .icon.exams img {
   width: 3.5rem;
@@ -115,11 +116,6 @@ nav li {
   width: 5rem;
 }
 
-
-.icon span {
-
-  margin: 0 auto;
-}
 
 /* business info section */
 .business-info {
@@ -157,4 +153,51 @@ footer {
 footer .logo img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+
+    .main-banner {
+      height: 22rem;
+      background-position: 20%;
+    }
+    header .container {
+      top: 0;
+    }
+    .slogan {
+      top: 5rem;
+      padding: 0.75rem 4rem 0.75rem 4rem;
+      font-size: 1.33rem;
+      line-height: 1.2;
+      float: right;
+      margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 17rem;
+  }
+
+  nav li {
+    display: none;
+  }
+  .mobile-nav ul{
+    display: block;
+    text-align: center;
+  }
+
+  .slogan {
+    top: 9rem;
+    padding: 1rem 0 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+
+  .icons{
+    flex-direction: column;
+  }
 }
