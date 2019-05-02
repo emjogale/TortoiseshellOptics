@@ -78,6 +78,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .icon {
@@ -87,6 +88,13 @@ nav li {
   justify-content: space-between;
   width: 30%;
   height: 8rem;
+
+
+
+    margin: 3rem;
+   width: 5rem;
+
+}
 }
  .icons {
    padding-top: 3rem;
@@ -109,7 +117,7 @@ nav li {
 
 
 .icon span {
-  width: 5rem;
+
   margin: 0 auto;
 }
 
@@ -136,18 +144,17 @@ nav li {
   margin-bottom: 1rem;
 }
 
+
 /* footer section */
 footer {
   display: flex;
   align-items: center;
   background-color: azure;
   width: 100%;
-
-
   justify-content: space-between;
 }
 
-footer img {
+footer .logo img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
 }
