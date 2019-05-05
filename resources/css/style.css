@@ -7,16 +7,16 @@ html {
 
  *, *:before, *after {
   box-sizing: inherit;
-} 
+}
 
 body {
   font-family: "Helvetica", sans-serif;
 }
 
-div,
+/*div,
 nav  {
   border: 1px solid black;
-}
+} */
 .container {
   max-width: 100%;
   width: 960px;
@@ -176,14 +176,21 @@ footer .logo img {
       line-height: 1.2;
       float: right;
       margin-right: 2rem;
+      right: 0;
+    }
+
+    .business-info {
+      justify-content: center;
+      margin: 3.77rem 0 4rem 0;
+    }
+    .info {
+      width: 50%;
     }
 }
 
 @media only screen and (max-width: 470px) {
 
-  .main-banner {
-    display: none;
-  }
+
 
   header .logo span {
     display: none;
@@ -193,14 +200,14 @@ footer .logo img {
 
     display: none;
   }
-  .mobile-nav {
 
+  .mobile-nav {
     display: block;
     text-align: center;
   }
 
   .slogan {
-    top: 9rem;
+    top: 11rem;
     padding: 1rem 0 1rem 0;
     font-size: 1rem;
     text-align: center;
@@ -210,5 +217,25 @@ footer .logo img {
 
   .icons{
     flex-direction: column;
+  }
+
+  .business-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .info h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    margin-bottom: 4rem;
+    margin-left: 0.5rem;
   }
 }
